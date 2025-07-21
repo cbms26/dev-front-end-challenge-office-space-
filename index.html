@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tangerine</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="header-container">
+        <div class="header-left">
+          <button
+            class="hamburger-menu"
+            id="hamburger-menu"
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="" class="logo">Tangerine Hub</a>
+        </div>
+
+        <div class="header-right">
+          <div class="user-profile">
+            <img
+              src="https://avatars.githubusercontent.com/u/170586961?v=4"
+              alt="User Profile Picture"
+              class="user-avatar"
+            />
+            <span class="user-name">John Doe</span>
+            <div class="user-actions">
+              <a href="" class="user-link">Settings</a>
+              <a href="" class="user-link">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h3>Navigation</h3>
+        <button class="close-btn" id="close-btn">&times;</button>
+      </div>
+      <ul class="sidebar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Profile</a></li>
+        <li><a href="#">Departments</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+
+    <!-- Overlay for sidebar -->
+    <!-- <div class="overlay" id="overlay"></div> -->
+
+    <main>
+      <!-- Main Content Area -->
+      <div class="main-content">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+              <a href="#" class="breadcrumb-link">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <span class="breadcrumb-separator">›</span>
+              <span class="breadcrumb-current">Dashboard</span>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Hero section -->
+        <section class="hero" role="banner">
+          <div class="hero-content">
+            <h1 class="welcome-message" id="welcome-message">
+              Good Morning, John!
+            </h1>
+            <p class="hero-subtitle">Welcome to Tangerine Hub Workspace</p>
+
+            <!-- Live Clock & Weather Widget -->
+            <div class="hero-widgets">
+              <div class="clock-widget">
+                <div class="current-time" id="current-time">12:00:00</div>
+                <div class="current-date" id="current-date">
+                  Monday, July 21, 2025
+                </div>
+              </div>
+              <div class="weather-widget">
+                <div class="weather-info">
+                  <span class="weather-icon">☀️</span>
+                  <span class="temperature">24°C</span>
+                  <span class="weather-desc">Sunny</span>
+                </div>
+                <div class="location">New York, NY</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Main Dashboard - Grid Layout -->
+        <section class="dashboard">
+          <div class="dashboard-grid">
+            <!-- Learning and Events -->
+            <div class="dashboard-card learning-events">
+              <div class="card-header">
+                <h2>Learning & Events</h2>
+                <a href="#" class="view-all">View All</a>
+              </div>
+              <div class="card-content">
+                <div class="event-item">
+                  <div class="event-date">
+                    <span class="day">22</span>
+                    <span class="month">JUL</span>
+                  </div>
+                  <div class="event-details">
+                    <h4>Leadership Workshop</h4>
+                    <p>Conference Room A - 2:00 PM</p>
+                  </div>
+                </div>
+                <div class="event-item">
+                  <div class="event-date">
+                    <span class="day">23</span>
+                    <span class="month">JUL</span>
+                  </div>
+                  <div class="event-details">
+                    <h4>Tech Talk: AI in Workplace</h4>
+                    <p>Virtual - 3:30 PM</p>
+                  </div>
+                </div>
+                <div class="event-item">
+                  <div class="event-date">
+                    <span class="day">28</span>
+                    <span class="month">JUL</span>
+                  </div>
+                  <div class="event-details">
+                    <h4>Team Building Activity</h4>
+                    <p>Main Hall - 1:00 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Announcements -->
+            <div class="dashboard-card announcements">
+              <div class="card-header">
+                <h2>Announcements</h2>
+                <a href="#" class="view-all">View All</a>
+              </div>
+              <div class="card-content">
+                <div class="announcement-item">
+                  <div class="announcement-meta">
+                    <span class="date">July 27, 2025</span>
+                    <span class="priority high">High Priority</span>
+                  </div>
+                  <h3>New Security Protocol Implementation</h3>
+                  <p>
+                    All employees must update their passwords by July 27th.
+                    Pleasefollow the new security guidelines...
+                  </p>
+                </div>
+                <div class="announcement-item">
+                  <div class="announcement-meta">
+                    <span class="date">July 28, 2025</span>
+                    <span class="priority medium">Medium Priority</span>
+                  </div>
+                  <h3>Summer Office Hours</h3>
+                  <p>
+                    Starting July 28nd, we'll be implementing flexible summer
+                    hours. Core hours will be 10 AM - 3 PM...
+                  </p>
+                </div>
+                <div class="announcement-item">
+                  <div class="announcement-meta">
+                    <span class="date">July 18, 2025</span>
+                    <span class="priority low">Low Priority</span>
+                  </div>
+                  <h3>New Coffee Machine in Break Room</h3>
+                  <p>
+                    We've installed a new espresso machine on the 3rd floor.
+                    Enjoy your premium coffee experience!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resources - Bottom Left -->
+            <div class="dashboard-card resources">
+              <div class="card-header">
+                <h2>📚 Resources</h2>
+                <a href="#" class="view-all">View All</a>
+              </div>
+              <div class="card-content">
+                <div class="resource-category">
+                  <h4>📖 Documentation</h4>
+                  <ul>
+                    <li><a href="#">Employee Handbook</a></li>
+                    <li><a href="#">IT Support Guide</a></li>
+                    <li><a href="#">Project Templates</a></li>
+                  </ul>
+                </div>
+                <div class="resource-category">
+                  <h4>🔧 Tools</h4>
+                  <ul>
+                    <li><a href="#">Time Tracking</a></li>
+                    <li><a href="#">Expense Reports</a></li>
+                    <li><a href="#">Meeting Scheduler</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Company News & Updates -->
+            <div class="dashboard-card company-news">
+              <div class="card-header">
+                <h2>📰 Company News</h2>
+                <a href="#" class="view-all">View All</a>
+              </div>
+              <div class="card-content">
+                <div class="news-item">
+                  <div class="news-date">Jul 16</div>
+                  <div class="news-content">
+                    <h4>Q3 Financial Results</h4>
+                    <p>Company exceeds revenue targets by 15%</p>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <div class="news-date">Jul 14</div>
+                  <div class="news-content">
+                    <h4>New Office Opening</h4>
+                    <p>Austin branch opens next month</p>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <div class="news-date">Jul 12</div>
+                  <div class="news-content">
+                    <h4>Partnership Announcement</h4>
+                    <p>Strategic alliance with TechCorp</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Performance Dashboard -->
+            <div class="dashboard-card performance">
+              <div class="card-header">
+                <h2>📈 Performance Metrics</h2>
+                <a href="#" class="view-all">View Report</a>
+              </div>
+              <div class="card-content">
+                <div class="performance-metric">
+                  <div class="metric-header">
+                    <span class="metric-title">Team Productivity</span>
+                    <span class="metric-value">94%</span>
+                  </div>
+                  <div class="metric-bar">
+                    <div class="metric-progress" style="width: 94%"></div>
+                  </div>
+                </div>
+                <div class="performance-metric">
+                  <div class="metric-header">
+                    <span class="metric-title">Project Delivery</span>
+                    <span class="metric-value">87%</span>
+                  </div>
+                  <div class="metric-bar">
+                    <div class="metric-progress" style="width: 87%"></div>
+                  </div>
+                </div>
+                <div class="performance-metric">
+                  <div class="metric-header">
+                    <span class="metric-title">Client Satisfaction</span>
+                    <span class="metric-value">96%</span>
+                  </div>
+                  <div class="metric-bar">
+                    <div class="metric-progress" style="width: 96%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Stats - Middle Right -->
+            <div class="dashboard-card quick-stats">
+              <div class="card-header">
+                <h2>📊 Quick Stats</h2>
+              </div>
+              <div class="card-content">
+                <div class="stat-item">
+                  <div class="stat-number">23</div>
+                  <div class="stat-label">Active Projects</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">8</div>
+                  <div class="stat-label">Pending Tickets</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">156</div>
+                  <div class="stat-label">Team Members</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">4.2</div>
+                  <div class="stat-label">Avg Response Time (hrs)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="dashboard-card quick-actions">
+              <div class="card-header">
+                <h2>⚡ Quick Actions</h2>
+              </div>
+              <div class="card-content">
+                <div class="action-grid">
+                  <button
+                    class="action-btn"
+                    onclick="showNotification('Timesheet submitted!')"
+                  >
+                    <span class="action-icon">⏰</span>
+                    <span class="action-text">Submit Timesheet</span>
+                  </button>
+                  <button
+                    class="action-btn"
+                    onclick="showNotification('Request submitted!')"
+                  >
+                    <span class="action-icon">🏖️</span>
+                    <span class="action-text">Request Leave</span>
+                  </button>
+                  <button
+                    class="action-btn"
+                    onclick="showNotification('Booking calendar opened!')"
+                  >
+                    <span class="action-icon">📅</span>
+                    <span class="action-text">Book Meeting</span>
+                  </button>
+                  <button
+                    class="action-btn"
+                    onclick="showNotification('IT support contacted!')"
+                  >
+                    <span class="action-icon">💻</span>
+                    <span class="action-text">IT Support</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Side content -->
+      <aside class="side-content">
+        <!-- Recent Activity -->
+        <div class="recent-activity">
+          <div class="recent-activity-header">
+            <h2>Recent Activity</h2>
+          </div>
+          <div class="recent-activity-content">
+            <div class="activity-item">
+              <div class="activity-details">
+                <p><strong>Project Alpha</strong> milestone completed</p>
+                <span class="activity-time">2 hours ago</span>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-details">
+                <p><strong>Mike Chen</strong> submitted expense report</p>
+                <span class="activity-time">4 hours ago</span>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-details">
+                <p><strong>Marketing Team</strong> reached Q3 goal</p>
+                <span class="activity-time">6 hours ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Spotlight -->
+        <div class="team-spotlight">
+          <div class="card-header">
+            <h2>⭐ Team Spotlight</h2>
+          </div>
+          <div class="card-content">
+            <div class="spotlight-member">
+              <img
+                src="https://avatars.githubusercontent.com/u/170586961?v=4"
+                alt="Employee of the Month"
+                class="spotlight-avatar"
+              />
+              <div class="spotlight-details">
+                <h3>Sarah Johnson</h3>
+                <p class="spotlight-role">Senior Developer</p>
+                <p class="spotlight-achievement">Employee of the Month</p>
+                <p class="spotlight-description">
+                  Outstanding performance in leading the customer portal
+                  redesign project.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Celebrations Widget -->
+        <div class="celebrations-widget">
+          <div class="card-header">
+            <h2>🎉 Celebrations</h2>
+          </div>
+          <div class="card-content">
+            <div class="celebration-item birthday-item">
+              <div class="celebration-icon">🎂</div>
+              <div class="celebration-details">
+                <h4>Today's Birthday</h4>
+                <p>Mike Chen is celebrating today!</p>
+                <button
+                  class="wish-btn"
+                  onclick="showNotification('Birthday wish sent! 🎉')"
+                >
+                  Send Wishes
+                </button>
+              </div>
+            </div>
+            <div class="celebration-item anniversary-item">
+              <div class="celebration-icon">🏆</div>
+              <div class="celebration-details">
+                <h4>Work Anniversary</h4>
+                <p>Lisa Wong - 3 years with us!</p>
+                <button
+                  class="wish-btn"
+                  onclick="showNotification('Congratulations sent! 🎊')"
+                >
+                  Congratulate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Notification System -->
+    <div class="notification-container" id="notification-container"></div>
+
+    <footer>
+      <p>&copy; 2025 Tangerine. All rights reserved.</p>
+      <p>
+        Contact us:
+        <a href="mailto:@tangerine.com">info@tangerine.com</a>
+      </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
